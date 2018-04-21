@@ -147,7 +147,7 @@ for line in f:
 		word_pos = word + "/" + tag + " "
 		if not word.isalnum() and len(word) < 3:
 			word_pos = word + "/" + word
-			if word = ';':
+			if word == ';':
 				word_pos = word + "/."
 		if '$' in word:
 			word_pos = word + "/nns"
