@@ -1,4 +1,4 @@
-but li#NLP Project 2: HMM POS Tagger Confusion Matrix generation by Donghyun Park & Junbum Kim
+#NLP Project 2: HMM POS Tagger Confusion Matrix generation by Donghyun Park & Junbum Kim
 from sklearn.metrics import confusion_matrix
 import numpy as np
 import pandas as pd
@@ -6,7 +6,7 @@ import pandas as pd
 def confuse(doc):
     tags = []
     for line in doc:
-        line = line.rstrip()
+        line = line.strip()
         tokens = line.split(" ")
         for token in tokens:
             tag = token.split("/")
@@ -18,12 +18,13 @@ def confuse(doc):
 def main():
     print("Enter Predicted Labels File: ", end="")
     predicts = input()
+    predicts = "test_label/ca09"
     predictFile = open(predicts, 'r')
 
     print("Enter True Labels File: ", end="")
     truths = input()
+    truths = "test_label/ca09"
     truthFile = open(truths, 'r')
-
     output = open("outputFile", "w")
 
 
@@ -34,8 +35,12 @@ def main():
     trueTags = confuse(truthFile)
 
     conf = confusion_matrix(trueTags, predictTags)
-    confPD = pd.DataFrame(conf)
-    confPD.to_excel("outputFile.xlsx", index=False)
+    for row in conf:
+        for col in row:
+            output.write(str(col)+ " ")
+        output.write("\n")
+    #confPD = pd.DataFrame(conf)
+    #confPD.to_excel("outputFile.xlsx", index=False)
     #output.write(np.array2string(confusion_matrix(trueTags, predictTags)))
 
 if __name__ == "__main__":
