@@ -144,7 +144,7 @@ for line in f:
 		position = token[0]
 		tag = token[1]
 		word = words[int(position) - 1]
-		word_pos = word + "/" + tag + " "
+		word_pos = word + "/" + tag
 		if not word.isalnum() and len(word) < 3:
 			word_pos = word + "/" + word
 			if word == ';':
