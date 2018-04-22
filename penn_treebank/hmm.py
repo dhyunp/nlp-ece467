@@ -31,7 +31,7 @@ for document in f:
 			if len(word) == 2:
 				transition_tag = previous + " " + word[1]
 				emit_tag = word[1] + " " + word[0]
-				emit_unk = word[1] + " <unk>"
+				em#it_unk = word[1] + " <unk>"
 				if transition_tag not in transition:
 					transition[transition_tag] = 0
 				if word[1] not in context:
