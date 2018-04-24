@@ -32,11 +32,25 @@ def main():
     predictTags = confuse(predictFile)
     trueTags = confuse(truthFile)
 
+    sum = 0.0
+    diag = 0.0
     conf = confusion_matrix(trueTags, predictTags)
+    
+    i = 0
     for row in conf:
+        j = 0
+        output.write("\t")
         for col in row:
+            sum += col
+            if i == j:
+                diag += col
+            j += 1
             output.write(str(col)+ "\t")
+        i+=1
         output.write("\n")
+
+    output.write("accuracy = " + str(diag/sum) + "\n")
+    
     #confPD = pd.DataFrame(conf)
     #confPD.to_excel("outputFile.xlsx", index=False)
     #output.write(np.array2string(confusion_matrix(trueTags, predictTags)))

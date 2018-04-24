@@ -21,7 +21,8 @@ start = time.time()
 for document in f:
 	doc = open("train_set/" + document.strip(), 'r')
 	for line in doc:
-		tokens = nltk.word_tokenize(line.strip())
+		tokens = line.strip().split(" ")
+		print tokens
 		previous = sos
 		if sos not in context:
 			context[sos] = 0
@@ -31,7 +32,7 @@ for document in f:
 			if len(word) == 2:
 				transition_tag = previous + " " + word[1]
 				emit_tag = word[1] + " " + word[0]
-				em#it_unk = word[1] + " <unk>"
+				#emit_unk = word[1] + " <unk>"
 				if transition_tag not in transition:
 					transition[transition_tag] = 0
 				if word[1] not in context:
@@ -53,6 +54,11 @@ for document in f:
 f.close()
 # end of training
 
+print len(context)
+print context
+print sum(transition.itervalues())
+print sum(emit.itervalues())
+
 for key in transition:
 	token = key.split(' ')
 	transition[key] /= float(context[token[0]])
@@ -67,11 +73,6 @@ end = time.time()
 
 print "Train Time:", end - start, "(s) ellapsed."
 
-print len(context)
-print context
-print sum(transition.itervalues())
-print sum(emit.itervalues())
-
 
 # Currently the testing of the program does not work because it might encounter words that are not in training corpus
 # Smoothing techniques required to mitigate the effect of unlearned words
@@ -82,12 +83,12 @@ f = open("test_set/wsj_0004.mrg", 'r')
 result = open("result", 'w')
 
 for line in f:
-	words = nltk.word_tokenize(line.strip())
+	words = line.strip().split(" ")
 	if len(words) == 1:
 		result.write("\n")
 		continue
 	l = len(words)
-	print words
+	# print words
 	# forward step
 	best_score = defaultdict(float)
 	best_edge = defaultdict(str)
@@ -142,6 +143,7 @@ for line in f:
 		word = words[int(position) - 1]
 		word_pos = word + "/" + tag
 		
+		'''
 		if not word.isalnum() and len(word) < 3:
 			word_pos = word + "/" + word
 			if word == ';':
@@ -150,7 +152,7 @@ for line in f:
 			word_pos = word + "/NN"
 		if word.isdigit():
 			word_post = word + "/CD"
-		if word[0] == '\'':
+		if word == '\'s':
 			word_pos = word + "/POS"
 		if word.lower() in article:
 			word_pos = word + "/AT"
@@ -160,8 +162,9 @@ for line in f:
 			word_pos = word + "/PPS"
 		if word.lower() in preposition:
 			word_pos = word + "/IN"
-		
-		print word_pos
+		'''
+
+		#print word_pos
 		tags.append(word_pos)
 		next_edge = best_edge[next_edge]
 	tags.reverse()
