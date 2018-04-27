@@ -1,5 +1,6 @@
 #NLP Project 2: HMM POS Tagger Confusion Matrix generation by Donghyun Park & Junbum Kim
 from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
 import numpy as np
 import pandas as pd
 
@@ -45,6 +46,7 @@ def main():
     fNeg = 0.0
 
     conf = confusion_matrix(trueTags, predictTags)
+
     (r,c) = np.shape(conf)
 
     i = 0
@@ -54,39 +56,16 @@ def main():
         for col in row:
             sum += col
             if i == j:
-                tPos = col
                 diag += col
-            else:
-                fNeg += col
             j += 1
             output.write(str(col)+ "\t")
-        recall = tPos / (tPos + fNeg)
-        recallAvg += recall
         i+=1
         output.write("\n")
 
-    i = 0
-    for col in np.transpose(conf):
-        j = 0
-        for row in col:
-            if i == j:
-                tPos = row
-            else:
-                fPos += row
-            j += 1
-        prec = tPos / (tPos + fPos)
-        precAvg += prec
-        i += 1
-
-    recallAvg = recallAvg / r
-    precAvg = precAvg / c
-    f1 = 2.0 * (recallAvg * precAvg) / (recallAvg + precAvg)
-
     output.write("accuracy = " + str(diag/sum) + "\n")
     output.write("count = " + str(sum) + "\n")
-    output.write("precision =  " + str(precAvg) + "\n")
-    output.write("recall = " + str(recallAvg) + "\n")
-    output.write("f1 = " + str(f1) + "\n")
+
+    output.write(classification_report(trueTags, predictTags))
 
     #confPD = pd.DataFrame(conf)
     #confPD.to_excel("outputFile.xlsx", index=False)
