@@ -15,6 +15,7 @@ for document in f:
 	for line in doc:
 		tokens = line.strip().split(" ")
 		#print tokens
+		prevprevprev = "<s>"
 		prevprev = "<s>"
 		previous = "<s>"
 		if "<s>" not in context:
@@ -23,7 +24,7 @@ for document in f:
 		for token in tokens:
 			word = token.split("/")
 			if len(word) == 2:
-				transition_tag = prevprev + " " +previous + " " + word[1]
+				transition_tag = prevprevprev + " " + prevprev + " " +previous + " " + word[1]
 				emit_tag = word[1] + " " + word[0].lower()
 				#emit_unk = word[1] + " <unk>"
 				if transition_tag not in transition:
@@ -42,7 +43,7 @@ for document in f:
 				prevprev = previous
 				previous = word[1]
 
-		transition_tag = prevprev + " " + previous + " </s>"
+		transition_tag = prevprevprev + " " + prevprev + " " + previous + " </s>"
 		if transition_tag not in transition:
 			transition[transition_tag] = 0
 		transition[transition_tag] += 1
@@ -86,7 +87,7 @@ f = open("test.list", 'r')
 
 for testfile in f:
 	test_set = open("test_set/" + testfile.strip(), 'r')
-	result = open("trigram/" + testfile.strip(), 'w')
+	result = open("fourgram/" + testfile.strip(), 'w')
 	for line in test_set:
 		words = nltk.word_tokenize(line.strip())
 		#if len(words) == 1:
@@ -100,50 +101,52 @@ for testfile in f:
 		best_score["0 <s>"] = 0
 		best_edge["0 <s>"] = None
 		for i in range(0,l):
-			for prevprev in context:
-				for prev in context:
-					for next in context:
-						#print prev, next, words[i].lower()
-						b_key = str(i) + " " + prev
-						prev_t = prevprev + " " + prev + " " + next
-						e_key = next + " " + words[i].lower()
-						#if e_key not in emit:
-						#	e_key = next + " <unk>"
-						if b_key in best_score and prev_t in transition:
-							if e_key in emit:
-								score = best_score[b_key] + transition[prev_t] + emit[e_key]
-							else:
-								score = best_score[b_key] + transition[prev_t] + maxnum
-							b_key_next = str(i+1) + " " + next
-							if b_key_next not in best_score:
-								best_score[b_key_next] = score
-								best_edge[b_key_next] = b_key
-							else:
-								if score < best_score[b_key_next]:
+			for prevprevprev in context:
+				for prevprev in context:
+					for prev in context:
+						for next in context:
+							#print prev, next, words[i].lower()
+							b_key = str(i) + " " + prev
+							prev_t = prevprevprev + " " + prevprev + " " + prev + " " + next
+							e_key = next + " " + words[i].lower()
+							#if e_key not in emit:
+							#	e_key = next + " <unk>"
+							if b_key in best_score and prev_t in transition:
+								if e_key in emit:
+									score = best_score[b_key] + transition[prev_t] + emit[e_key]
+								else:
+									score = best_score[b_key] + transition[prev_t] + maxnum
+								b_key_next = str(i+1) + " " + next
+								if b_key_next not in best_score:
 									best_score[b_key_next] = score
 									best_edge[b_key_next] = b_key
-		for prevrpev in context:
-			for prev in context:
-				next = "</s>"
-				b_key = str(l) + " " + prev
-				t_key = prevprev + " " + prev + " </s>"
-				e_key = "</s> " + words[i].lower()
-				# current fix for keys not in emit. this should be modified by ngram smoothing techniques
-				#if e_key not in emit:
-				#	e_key = "</s> <unk>"
-				if b_key in best_score and t_key in transition:
-					if e_key in emit:
-						score = best_score[b_key] + transition[t_key] + emit[e_key]
-					else:
-						score = best_score[b_key] + transition[t_key] + maxnum
-					b_key_next = str(l+1) + " </s>"
-					if b_key_next not in best_score:
-						best_score[b_key_next] = score
-						best_edge[b_key_next] = b_key
-					else:
-						if score < best_score[b_key_next]:
+								else:
+									if score < best_score[b_key_next]:
+										best_score[b_key_next] = score
+										best_edge[b_key_next] = b_key
+		for prevprevprev in context:
+			for prevrpev in context:
+				for prev in context:
+					next = "</s>"
+					b_key = str(l) + " " + prev
+					t_key = prevprevprev + " " + prevprev + " " + prev + " </s>"
+					e_key = "</s> " + words[i].lower()
+					# current fix for keys not in emit. this should be modified by ngram smoothing techniques
+					#if e_key not in emit:
+					#	e_key = "</s> <unk>"
+					if b_key in best_score and t_key in transition:
+						if e_key in emit:
+							score = best_score[b_key] + transition[t_key] + emit[e_key]
+						else:
+							score = best_score[b_key] + transition[t_key] + maxnum
+						b_key_next = str(l+1) + " </s>"
+						if b_key_next not in best_score:
 							best_score[b_key_next] = score
 							best_edge[b_key_next] = b_key
+						else:
+							if score < best_score[b_key_next]:
+								best_score[b_key_next] = score
+								best_edge[b_key_next] = b_key
 
 		# backwards step
 		tags = []

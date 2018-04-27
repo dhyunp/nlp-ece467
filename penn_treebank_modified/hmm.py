@@ -92,7 +92,7 @@ f = open("test.list", 'r')
 
 for testfile in f:
 	test_set = open("test_set/" + testfile.strip(), 'r')
-	result = open("result/" + testfile.strip(), 'w')
+	result = open("bigram/" + testfile.strip(), 'w')
 	for line in test_set:
 		words = nltk.word_tokenize(line.strip())
 		#if len(words) == 1:

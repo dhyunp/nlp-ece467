@@ -26,7 +26,9 @@ def main():
     truths = input()
     truthFile = open(truths, 'r')
 
-    output = open("outputFile", "w")
+    print("Enter Output File Name: ", end="")
+    outputFile = input()
+    output = open(outputFile, "w")
 
     predictTags = []
     trueTags = []
@@ -64,7 +66,8 @@ def main():
 
     output.write("accuracy = " + str(diag/sum) + "\n")
     output.write("count = " + str(sum) + "\n")
-
+    output.write("used = " + str(min(len(trueTags), len(predictTags))) + "\n")
+    #output.write(pd.crosstab(trueTags, predictTags, rownames=['True'], colnames=['Predicted'], margins=True))
     output.write(classification_report(trueTags, predictTags))
 
     #confPD = pd.DataFrame(conf)
