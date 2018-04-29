@@ -5,14 +5,14 @@ train_set = open("test.list", "r")
 for document in train_set:
 	print "open:", document.strip()
 	train_document = open("test_label/" + document.strip(), "r")
-	result = open("result/" + document.strip(), "w")
+	result = open("test_set/" + document.strip(), "w")
 	for line in train_document:
 		tmp = line.strip().split(' ')
 		text = ""
 		for token in tmp:
 			word = token.split("/")
-			text = text + " " + word[0]  
-		result.write(re.sub(r'\s([?.!"](?:\s|$))', r'\1', text) + "\n")
+			text = text + word[0] + " "
+		result.write(text + "\n")
 		
 	result.close()
 	train_document.close()

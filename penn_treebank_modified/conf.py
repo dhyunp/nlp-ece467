@@ -1,22 +1,14 @@
 #NLP Project 2: HMM POS Tagger Confusion Matrix generation by Donghyun Park & Junbum Kim
 from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
 import numpy as np
 import pandas as pd
 
-def confuse(documents):
-
-    file = open(documents, 'r')
+def confuse(folder):
+    tags = []
+    file = open("test.list", 'r')
     for document in file:
-        if documents == "test.list":
-            doc1 = open("result/" + document.strip(), 'r')
-            doc2 = open("test_label/" + document.strip(), 'r')
-        while True:
-            line1 = doc1.readline()
-            token1 = line.strip().split(" ")
-            line2 = doc2.readline()
-            token2 = line.strip().split(" ")
-            
-
+        doc = open(folder + "/" + document.strip(), 'r')
         for line in doc:
             line = line.strip()
             tokens = line.split(" ")
@@ -45,13 +37,21 @@ def main():
     predictTags = []
     trueTags = []
 
-    predictTags = confuse("test.list")
-    trueTags = confuse("test.labels")
+    predictTags = confuse("bigram")
+    trueTags = confuse("test_label")
 
     sum = 0.0
     diag = 0.0
+
+    if len(predictTags) > len(trueTags):
+        print("length of predictTags is longer than trueTags!")
+        exit()
+    elif len(predictTags) < len(trueTags):
+        print("length of predictTags is shorter than trueTags!")
+        exit()
+
     conf = confusion_matrix(trueTags, predictTags)
-    
+
     i = 0
     for row in conf:
         j = 0
@@ -67,10 +67,11 @@ def main():
 
     output.write("accuracy = " + str(diag/sum) + "\n")
     output.write("count = " + str(sum) + "\n")
+    output.write("used = " + str(min(len(trueTags), len(predictTags))) + "\n")
+    #output.write(pd.crosstab(trueTags, predictTags, rownames=['True'], colnames=['Predicted'], margins=True))
+    output.write(classification_report(trueTags, predictTags))
+
     
-    #confPD = pd.DataFrame(conf)
-    #confPD.to_excel("outputFile.xlsx", index=False)
-    #output.write(np.array2string(confusion_matrix(trueTags, predictTags)))
 
 if __name__ == "__main__":
     main()

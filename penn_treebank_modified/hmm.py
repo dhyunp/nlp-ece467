@@ -94,7 +94,7 @@ for testfile in f:
 	test_set = open("test_set/" + testfile.strip(), 'r')
 	result = open("bigram/" + testfile.strip(), 'w')
 	for line in test_set:
-		words = nltk.word_tokenize(line.strip())
+		words = line.strip().split(' ')
 		#if len(words) == 1:
 		#	result.write("\n")
 		#	continue
@@ -192,6 +192,7 @@ for testfile in f:
 			
 			tags.append(word_pos)
 			next_edge = best_edge[next_edge]
+			
 		tags.reverse()
 		result.write(' '.join(tags) + "\n")
 	result.close()
