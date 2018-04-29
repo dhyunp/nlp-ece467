@@ -31,27 +31,25 @@ def main():
     truthfiles = open("test.labels", 'r')
     truthFile = open(truths, 'r')
     '''
-    output = open("outputFile", "w")
     
 
     predictTags = []
     trueTags = []
 
-    predictTags = confuse("bigram")
+    print("Enter Predicted Label Folder: ", end="")
+    folder = input()
+
+    print("Enter Output File: ", end="")
+    output = input().strip()
+    output = open(output, "w")
+
+    predictTags = confuse(folder)
     trueTags = confuse("test_label")
 
     sum = 0.0
     diag = 0.0
-
-    if len(predictTags) > len(trueTags):
-        print("length of predictTags is longer than trueTags!")
-        exit()
-    elif len(predictTags) < len(trueTags):
-        print("length of predictTags is shorter than trueTags!")
-        exit()
-
     conf = confusion_matrix(trueTags, predictTags)
-
+    
     i = 0
     for row in conf:
         j = 0
@@ -64,14 +62,15 @@ def main():
             output.write(str(col)+ "\t")
         i+=1
         output.write("\n")
-
+    
     output.write("accuracy = " + str(diag/sum) + "\n")
     output.write("count = " + str(sum) + "\n")
     output.write("used = " + str(min(len(trueTags), len(predictTags))) + "\n")
     #output.write(pd.crosstab(trueTags, predictTags, rownames=['True'], colnames=['Predicted'], margins=True))
     output.write(classification_report(trueTags, predictTags))
-
-    
+    #confPD = pd.DataFrame(conf)
+    #confPD.to_excel("outputFile.xlsx", index=False)
+    #output.write(np.array2string(confusion_matrix(trueTags, predictTags)))
 
 if __name__ == "__main__":
     main()
