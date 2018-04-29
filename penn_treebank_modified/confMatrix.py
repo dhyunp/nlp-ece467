@@ -38,18 +38,15 @@ def main():
 
     sum = 0.0
     diag = 0.0
-    recall = 0.0
-    recallAvg = 0.0
-    prec = 0.0
-    precAvg = 0.0
 
-    tPos = 0.0
-    fPos = 0.0
-    fNeg = 0.0
+    if len(predictTags) > len(trueTags):
+        print("length of predictTags is longer than trueTags!")
+        exit()
+    elif len(predictTags) < len(trueTags):
+        print("length of predictTags is shorter than trueTags!")
+        exit()
 
     conf = confusion_matrix(trueTags, predictTags)
-
-    (r,c) = np.shape(conf)
 
     i = 0
     for row in conf:
