@@ -1,4 +1,4 @@
-File: wsj_0013.mrg Line: 3 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0013.mrg Line: 3 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0013.mrg Line: 3 - Mass, Mass.
 File: wsj_0013.mrg Line: 3 - ., ,
 File: wsj_0013.mrg Line: 3 - ,, had
@@ -38,7 +38,7 @@ File: wsj_0013.mrg Line: 3 - its, bid
 File: wsj_0013.mrg Line: 3 - bid, is
 File: wsj_0013.mrg Line: 3 - is, worth
 File: wsj_0013.mrg Line: 3 - worth, .
-File: wsj_0025.mrg Line: 1 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0025.mrg Line: 1 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0025.mrg Line: 1 - R.P, R.P.
 File: wsj_0025.mrg Line: 1 - ., Scherer
 File: wsj_0025.mrg Line: 1 - Scherer, Corp.
@@ -73,7 +73,7 @@ File: wsj_0025.mrg Line: 1 - ,, and
 File: wsj_0025.mrg Line: 1 - and, other
 File: wsj_0025.mrg Line: 1 - other, managers
 File: wsj_0025.mrg Line: 1 - managers, .
-File: wsj_0025.mrg Line: 2 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0025.mrg Line: 2 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0025.mrg Line: 2 - R.P, R.P.
 File: wsj_0025.mrg Line: 2 - ., Scherer
 File: wsj_0025.mrg Line: 2 - Scherer, by
@@ -105,12 +105,12 @@ File: wsj_0025.mrg Line: 2 - of, its
 File: wsj_0025.mrg Line: 2 - its, non-encapsulating
 File: wsj_0025.mrg Line: 2 - non-encapsulating, businesses
 File: wsj_0025.mrg Line: 2 - businesses, .
-File: wsj_0036.mrg Line: 40 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0036.mrg Line: 40 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0036.mrg Line: 40 - F.W, F.W.
 File: wsj_0036.mrg Line: 40 - ., Dodge
 File: wsj_0036.mrg Line: 40 - Dodge, Group
 File: wsj_0036.mrg Line: 40 - Group, .
-File: wsj_0041.mrg Line: 35 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0041.mrg Line: 35 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0041.mrg Line: 35 - Gov, Gov.
 File: wsj_0041.mrg Line: 35 - ., Douglas
 File: wsj_0041.mrg Line: 35 - Douglas, Wilder
@@ -143,7 +143,7 @@ File: wsj_0041.mrg Line: 35 - a, tour
 File: wsj_0041.mrg Line: 35 - tour, de
 File: wsj_0041.mrg Line: 35 - de, force
 File: wsj_0041.mrg Line: 35 - force, .
-File: wsj_0041.mrg Line: 68 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0041.mrg Line: 68 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0041.mrg Line: 68 - Gov, Gov.
 File: wsj_0041.mrg Line: 68 - ., Nelson
 File: wsj_0041.mrg Line: 68 - Nelson, Rockefeller
@@ -172,7 +172,7 @@ File: wsj_0041.mrg Line: 68 - is, your
 File: wsj_0041.mrg Line: 68 - your, man
 File: wsj_0041.mrg Line: 68 - man, .
 File: wsj_0041.mrg Line: 68 - ., ''
-File: wsj_0046.mrg Line: 1 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0046.mrg Line: 1 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0046.mrg Line: 1 - H.N, H.N.
 File: wsj_0046.mrg Line: 1 - ., &
 File: wsj_0046.mrg Line: 1 - &, Frances
@@ -184,7 +184,7 @@ File: wsj_0046.mrg Line: 1 - for, $
 File: wsj_0046.mrg Line: 1 - $, 150
 File: wsj_0046.mrg Line: 1 - 150, million
 File: wsj_0046.mrg Line: 1 - million, .
-File: wsj_0046.mrg Line: 2 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0046.mrg Line: 2 - ERROR: Length of checking file is longer than test label file by 2 word/s!
 File: wsj_0046.mrg Line: 2 - S, S&L
 File: wsj_0046.mrg Line: 2 - &, ,
 File: wsj_0046.mrg Line: 2 - L, which
@@ -209,7 +209,7 @@ File: wsj_0046.mrg Line: 2 - at, end
 File: wsj_0046.mrg Line: 2 - the, of
 File: wsj_0046.mrg Line: 2 - end, September
 File: wsj_0046.mrg Line: 2 - of, .
-File: wsj_0051.mrg Line: 5 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0051.mrg Line: 5 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0051.mrg Line: 5 - No, No.
 File: wsj_0051.mrg Line: 5 - ., 1
 File: wsj_0051.mrg Line: 5 - 1, computer
@@ -219,7 +219,7 @@ File: wsj_0051.mrg Line: 5 - ,, is
 File: wsj_0051.mrg Line: 5 - is, n't
 File: wsj_0051.mrg Line: 5 - n't, alone
 File: wsj_0051.mrg Line: 5 - alone, .
-File: wsj_0058.mrg Line: 1 - ERROR: Length of checking file is shorter than test label file!
+File: wsj_0058.mrg Line: 1 - ERROR: Length of checking file is shorter than test label file by2 word/s!
 File: wsj_0058.mrg Line: 1 - Co., Co
 File: wsj_0058.mrg Line: 1 - Woodcliff, .
 File: wsj_0058.mrg Line: 1 - Lake, Woodcliff
@@ -260,13 +260,13 @@ File: wsj_0058.mrg Line: 1 - membership, increasing
 File: wsj_0058.mrg Line: 1 - to, board
 File: wsj_0058.mrg Line: 1 - 10, membership
 File: wsj_0058.mrg Line: 1 - ., to
-File: wsj_0082.mrg Line: 3 - ERROR: Length of checking file is shorter than test label file!
+File: wsj_0082.mrg Line: 3 - ERROR: Length of checking file is shorter than test label file by1 word/s!
 File: wsj_0082.mrg Line: 3 - U.S.., U.S.
-File: wsj_0082.mrg Line: 11 - ERROR: Length of checking file is shorter than test label file!
+File: wsj_0082.mrg Line: 11 - ERROR: Length of checking file is shorter than test label file by1 word/s!
 File: wsj_0082.mrg Line: 11 - U.S.., U.S.
-File: wsj_0082.mrg Line: 12 - ERROR: Length of checking file is shorter than test label file!
+File: wsj_0082.mrg Line: 12 - ERROR: Length of checking file is shorter than test label file by1 word/s!
 File: wsj_0082.mrg Line: 12 - U.S.., U.S.
-File: wsj_0087.mrg Line: 14 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0087.mrg Line: 14 - ERROR: Length of checking file is longer than test label file by 2 word/s!
 File: wsj_0087.mrg Line: 14 - S, S&L
 File: wsj_0087.mrg Line: 14 - &, in
 File: wsj_0087.mrg Line: 14 - L, areas
@@ -275,7 +275,7 @@ File: wsj_0087.mrg Line: 14 - areas, to
 File: wsj_0087.mrg Line: 14 - crucial, its
 File: wsj_0087.mrg Line: 14 - to, survival
 File: wsj_0087.mrg Line: 14 - its, .
-File: wsj_0089.mrg Line: 37 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0089.mrg Line: 37 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0089.mrg Line: 37 - Rev, Rev.
 File: wsj_0089.mrg Line: 37 - ., Jeremy
 File: wsj_0089.mrg Line: 37 - Jeremy, Hummerstone
@@ -315,7 +315,7 @@ File: wsj_0089.mrg Line: 37 - picket, line
 File: wsj_0089.mrg Line: 37 - line, in
 File: wsj_0089.mrg Line: 37 - in, protest
 File: wsj_0089.mrg Line: 37 - protest, .
-File: wsj_0089.mrg Line: 42 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0089.mrg Line: 42 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0089.mrg Line: 42 - W.D, W.D.
 File: wsj_0089.mrg Line: 42 - ., Jones
 File: wsj_0089.mrg Line: 42 - Jones, ,
@@ -333,7 +333,7 @@ File: wsj_0089.mrg Line: 42 - ``, reopen
 File: wsj_0089.mrg Line: 42 - reopen, the
 File: wsj_0089.mrg Line: 42 - the, wound
 File: wsj_0089.mrg Line: 42 - wound, .
-File: wsj_0089.mrg Line: 43 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0089.mrg Line: 43 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0089.mrg Line: 43 - C.J.B, C.J.B.
 File: wsj_0089.mrg Line: 43 - ., Marshall
 File: wsj_0089.mrg Line: 43 - Marshall, ,
@@ -362,7 +362,7 @@ File: wsj_0089.mrg Line: 43 - next, to
 File: wsj_0089.mrg Line: 43 - to, the
 File: wsj_0089.mrg Line: 43 - the, altar
 File: wsj_0089.mrg Line: 43 - altar, .
-File: wsj_0106.mrg Line: 1 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0106.mrg Line: 1 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0106.mrg Line: 1 - US, US$
 File: wsj_0106.mrg Line: 1 - $, 148.9
 File: wsj_0106.mrg Line: 1 - 148.9, million
@@ -380,9 +380,9 @@ File: wsj_0106.mrg Line: 1 - of, perpetual
 File: wsj_0106.mrg Line: 1 - perpetual, preferred
 File: wsj_0106.mrg Line: 1 - preferred, shares
 File: wsj_0106.mrg Line: 1 - shares, .
-File: wsj_0112.mrg Line: 17 - ERROR: Length of checking file is shorter than test label file!
+File: wsj_0112.mrg Line: 17 - ERROR: Length of checking file is shorter than test label file by1 word/s!
 File: wsj_0112.mrg Line: 17 - U.S.., U.S.
-File: wsj_0112.mrg Line: 55 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0112.mrg Line: 55 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0112.mrg Line: 55 - No, No.
 File: wsj_0112.mrg Line: 55 - ., 48
 File: wsj_0112.mrg Line: 55 - 48, of
@@ -405,7 +405,7 @@ File: wsj_0112.mrg Line: 55 - into, its
 File: wsj_0112.mrg Line: 55 - its, impetuous
 File: wsj_0112.mrg Line: 55 - impetuous, vortex
 File: wsj_0112.mrg Line: 55 - vortex, .
-File: wsj_0118.mrg Line: 66 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0118.mrg Line: 66 - ERROR: Length of checking file is longer than test label file by 4 word/s!
 File: wsj_0118.mrg Line: 66 - S, S&P
 File: wsj_0118.mrg Line: 66 - &, Not
 File: wsj_0118.mrg Line: 66 - P, surprisingly
@@ -434,7 +434,7 @@ File: wsj_0118.mrg Line: 66 - they, the
 File: wsj_0118.mrg Line: 66 - mirror, S&P
 File: wsj_0118.mrg Line: 66 - the, 500
 File: wsj_0118.mrg Line: 66 - S, .
-File: wsj_0118.mrg Line: 83 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0118.mrg Line: 83 - ERROR: Length of checking file is longer than test label file by 2 word/s!
 File: wsj_0118.mrg Line: 83 - S, S&P
 File: wsj_0118.mrg Line: 83 - &, 500
 File: wsj_0118.mrg Line: 83 - P, often
@@ -460,7 +460,7 @@ File: wsj_0118.mrg Line: 83 - chairman, Champion
 File: wsj_0118.mrg Line: 83 - of, International
 File: wsj_0118.mrg Line: 83 - Champion, Corp
 File: wsj_0118.mrg Line: 83 - International, .
-File: wsj_0118.mrg Line: 117 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0118.mrg Line: 117 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0118.mrg Line: 117 - A, A.
 File: wsj_0118.mrg Line: 117 - ., White
 File: wsj_0118.mrg Line: 117 - White, contributed
@@ -468,7 +468,7 @@ File: wsj_0118.mrg Line: 117 - contributed, to
 File: wsj_0118.mrg Line: 117 - to, this
 File: wsj_0118.mrg Line: 117 - this, article
 File: wsj_0118.mrg Line: 117 - article, .
-File: wsj_0118.mrg Line: 122 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0118.mrg Line: 122 - ERROR: Length of checking file is longer than test label file by 2 word/s!
 File: wsj_0118.mrg Line: 122 - S, S&P
 File: wsj_0118.mrg Line: 122 - &, 500
 File: wsj_0118.mrg Line: 122 - P, ,
@@ -493,7 +493,7 @@ File: wsj_0118.mrg Line: 122 - markets, in
 File: wsj_0118.mrg Line: 122 - largely, New
 File: wsj_0118.mrg Line: 122 - in, York
 File: wsj_0118.mrg Line: 122 - New, .
-File: wsj_0118.mrg Line: 123 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0118.mrg Line: 123 - ERROR: Length of checking file is longer than test label file by 4 word/s!
 File: wsj_0118.mrg Line: 123 - S, S&P
 File: wsj_0118.mrg Line: 123 - &, 500
 File: wsj_0118.mrg Line: 123 - P, widget
@@ -515,7 +515,7 @@ File: wsj_0118.mrg Line: 123 - S, widget
 File: wsj_0118.mrg Line: 123 - &, in
 File: wsj_0118.mrg Line: 123 - P, Chicago
 File: wsj_0118.mrg Line: 123 - 500, .
-File: wsj_0118.mrg Line: 124 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0118.mrg Line: 124 - ERROR: Length of checking file is longer than test label file by 2 word/s!
 File: wsj_0118.mrg Line: 124 - S, S&P
 File: wsj_0118.mrg Line: 124 - &, 500
 File: wsj_0118.mrg Line: 124 - P, index
@@ -531,11 +531,11 @@ File: wsj_0118.mrg Line: 124 - fully, at
 File: wsj_0118.mrg Line: 124 - invested, all
 File: wsj_0118.mrg Line: 124 - at, times
 File: wsj_0118.mrg Line: 124 - all, .
-File: wsj_0118.mrg Line: 126 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0118.mrg Line: 126 - ERROR: Length of checking file is longer than test label file by 2 word/s!
 File: wsj_0118.mrg Line: 126 - S, S&P
 File: wsj_0118.mrg Line: 126 - &, 500
 File: wsj_0118.mrg Line: 126 - P, .
-File: wsj_0118.mrg Line: 128 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0118.mrg Line: 128 - ERROR: Length of checking file is longer than test label file by 2 word/s!
 File: wsj_0118.mrg Line: 128 - S, S&P
 File: wsj_0118.mrg Line: 128 - &, 500
 File: wsj_0118.mrg Line: 128 - P, may
@@ -547,7 +547,7 @@ File: wsj_0118.mrg Line: 128 - the, surrounding
 File: wsj_0118.mrg Line: 128 - hysteria, the
 File: wsj_0118.mrg Line: 128 - surrounding, issue
 File: wsj_0118.mrg Line: 128 - the, .
-File: wsj_0118.mrg Line: 130 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0118.mrg Line: 130 - ERROR: Length of checking file is longer than test label file by 2 word/s!
 File: wsj_0118.mrg Line: 130 - S, S&P
 File: wsj_0118.mrg Line: 130 - &, 500
 File: wsj_0118.mrg Line: 130 - P, is
@@ -560,7 +560,7 @@ File: wsj_0118.mrg Line: 130 - transacting, the
 File: wsj_0118.mrg Line: 130 - in, futures
 File: wsj_0118.mrg Line: 130 - the, market
 File: wsj_0118.mrg Line: 130 - futures, .
-File: wsj_0118.mrg Line: 138 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0118.mrg Line: 138 - ERROR: Length of checking file is longer than test label file by 2 word/s!
 File: wsj_0118.mrg Line: 138 - S, S&P
 File: wsj_0118.mrg Line: 138 - &, 500
 File: wsj_0118.mrg Line: 138 - P, stocks
@@ -578,7 +578,7 @@ File: wsj_0118.mrg Line: 138 - buy, sell
 File: wsj_0118.mrg Line: 138 - or, in
 File: wsj_0118.mrg Line: 138 - sell, Chicago
 File: wsj_0118.mrg Line: 138 - in, .
-File: wsj_0118.mrg Line: 179 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0118.mrg Line: 179 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0118.mrg Line: 179 - etc, etc.
 File: wsj_0118.mrg Line: 179 - ., -RRB-
 File: wsj_0118.mrg Line: 179 - -RRB-, ,
@@ -624,7 +624,7 @@ File: wsj_0129.mrg Line: 3 - nameplate, in
 File: wsj_0129.mrg Line: 3 - in, the
 File: wsj_0129.mrg Line: 3 - the, U.S.
 File: wsj_0129.mrg Line: 3 - U.S.., .
-File: wsj_0142.mrg Line: 59 - ERROR: Length of checking file is longer than test label file!
+File: wsj_0142.mrg Line: 59 - ERROR: Length of checking file is longer than test label file by 1 word/s!
 File: wsj_0142.mrg Line: 59 - No, No.
 File: wsj_0142.mrg Line: 59 - ., 111
 File: wsj_0142.mrg Line: 59 - 111, 4.6
