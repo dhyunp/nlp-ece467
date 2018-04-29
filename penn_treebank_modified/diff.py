@@ -19,7 +19,7 @@ for document in test_set:
         if len(cTokens) > len(tTokens):
             output.write("File: " + document + " Line: " + str(lineNum) + " - ERROR: Length of checking file is longer than test label file by " + str(len(cTokens) - len(tTokens)) + " word/s!\n")
         if len(cTokens) < len(tTokens):
-            output.write("File: " + document + " Line: " + str(lineNum) + " - ERROR: Length of checking file is shorter than test label file by" + str(len(tTokens) - len(cTokens)) + " word/s!\n")
+            output.write("File: " + document + " Line: " + str(lineNum) + " - ERROR: Length of checking file is shorter than test label file by " + str(len(tTokens) - len(cTokens)) + " word/s!\n")
 
         for cToken, tToken in itertools.izip_longest(cTokens, tTokens):
             if (cToken is not None) and (tToken is not None):
